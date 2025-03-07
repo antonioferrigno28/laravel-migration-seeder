@@ -7,7 +7,7 @@
 @section('contenuto')
     <h1 class="text-center mb-5 fw-semibold">Elenco delle partenze ordiante per data ed orario di partenza</h1>
 
-    <div class="row g-3">
+    <div class="row g-4 ">
         @foreach ($trains as $train)
             <div class="col-4">
                 <x-card>
