@@ -1,8 +1,62 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "VT323-Regular";
+    src: url("../../public/fonts/VT323-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "VT323-Regular", sans-serif;
+    background-color: black;
+}
+
+h1,
+h2,
+.main-text {
+    color: orange;
+}
+
+li {
+    font-size: 22px;
+}
+
+.list-group-item {
+    border: 1px solid orange !important;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+}
+
+.marquee {
+    display: inline-block;
+
+    transform: translateX(0%);
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

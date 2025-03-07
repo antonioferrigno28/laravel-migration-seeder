@@ -11,11 +11,20 @@
 </head>
 
 <body>
-    @include('partials.header')
+
+    <div class="marquee-container">
+        <div class="marquee">
+            SERVIZIO IRREGOLARE SU TUTTE LE LINEE A CAUSA DI GUASTO TECNICO.
+            SI INVITANO I PASSEGGERI A CONSULTARE GLI SCHERMI IN STAZIONE PER MAGGIORI INFORMAZIONI.
+            GRAZIE PER LA COLLABORAZIONE, CI SCUSIAMO PER IL DISAGIO. PER QUALSIASI LAMENTELA CONTATTARE IL SIG. MATTEO
+            SALVINI. P.S. FATE ATTENZIONE AI BORSEGGIATORI ED ALLA LINEA GIALLA.
+        </div>
+    </div>
+
     <div class="container">
         @yield('contenuto')
     </div>
-    @include('partials.footer')
+
 </body>
 
 </html>
