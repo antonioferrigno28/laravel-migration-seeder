@@ -9,7 +9,7 @@
 
     <div class="row g-4 ">
         @foreach ($trains as $train)
-            <div class="col-4">
+            <div class="col-6">
                 <x-card>
                     <x-slot:company>
                         <div class="main-text"><b>Compagnia: </b> {{ $train->company_name }}
