@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container pb-5">
         @yield('contenuto')
     </div>
 
